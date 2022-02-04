@@ -502,7 +502,7 @@ var _ = SkipDescribeIf(helpers.RunsOn54Kernel, "K8sServicesTest", func() {
 		BeforeAll(func() {
 			DeployCiliumAndDNS(kubectl, ciliumFilename)
 
-			toApply := []string{"demo_ds.yaml", "echo-svc.yaml"}
+			toApply := []string{"demo.yaml", "demo_ds.yaml", "echo-svc.yaml"}
 			if helpers.DualStackSupported() {
 				toApply = append(toApply, "demo_ds_v6.yaml")
 			}
