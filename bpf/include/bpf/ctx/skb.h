@@ -98,10 +98,10 @@ ctx_load_meta(const struct __sk_buff *ctx, const __u32 off)
 	return ctx->cb[off];
 }
 
-static __always_inline __maybe_unused __u16
+static __always_inline __maybe_unused __u32
 ctx_get_protocol(const struct __sk_buff *ctx)
 {
-	return (__u16)ctx->protocol;
+	return ctx->protocol;
 }
 
 static __always_inline __maybe_unused __u32

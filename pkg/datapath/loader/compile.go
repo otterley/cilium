@@ -93,9 +93,7 @@ var (
 		"-Wno-address-of-packed-member",
 		"-Wno-unknown-warning-option",
 		"-Wno-gnu-variable-sized-type-not-at-end",
-		"-Wdeclaration-after-statement",
-		"-Wimplicit-int-conversion",
-		"-Wenum-conversion"}
+		"-Wdeclaration-after-statement"}
 	standardLDFlags = []string{"-march=bpf"}
 
 	// testIncludes allows the unit tests to inject additional include
